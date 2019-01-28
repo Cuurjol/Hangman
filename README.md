@@ -44,7 +44,7 @@ This step is an optional.
 Examine the content of other yaml files (e.g. `en.yml`) in order to create your custom yaml file. Template yaml file is considered below:
 
 ```
-[locale key]:
+[locale code]:
   main:
     input_word: "[internationalization text]"
     hidden_word: "[internationalization text] %{word}. [internationalization text]"
@@ -108,7 +108,7 @@ Examine the content of other yaml files (e.g. `en.yml`) in order to create your 
   languages:
     en: "English"
     ru: "Русский"
-    [locale key]: "[locale name]"
+    [locale code]: "[locale name]"
 ```
 
 For example, for German language:
@@ -116,7 +116,7 @@ For example, for German language:
 - [internationalization text] - your internationalization text in German: `Ich hoffe der Regen hört auf, denn ich habe meinen Regenschirm vergessen.`.
 - [text words file] - the name of your text words file for game: `WordsDE.txt`.
 - [text image file] - the name of your text image file for showing game logo: `HangmanLogoDE.txt`.
-- [locale key] - the name of local key: `de`. [List of locale keys](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+- [locale code] - the name of local code: `de`. [List of locale keys](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 - [locale name] - the name of language: `German`.
 - [locale url] - the url of site __Wiktionary__: `https://de.wiktionary.org/wiki/%{word}` (`%{word}` does not need to remove). Visite the [site](https://www.wiktionary.org/) in order to find out if your language exists there or not.
 - [locale mistake] - text alert message when word does not exist on the site __Wiktionary__: `Dieser Eintrag existiert noch nicht!`. You have to find this message for your language on the [site](https://www.wiktionary.org/) when some word does not exist and just copy that in your custom yaml file.
