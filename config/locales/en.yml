@@ -1,0 +1,74 @@
+en:
+  main:
+    input_word: "Enter the word:"
+    hidden_word: "User thinks a new word %{word}. This word was added in the file \"WordsEN.txt\"."
+    existing_list_words: "List of existing words in the file \"WordsEN.txt\": %{list_words}"
+    add_or_delete_words: "How many words do you want to add/delete:"
+    counter_of_word: "The word's counter have to be greater than 0. Re-enter number:"
+    operation_message: >
+      The operation of adding/deleting words is performing now. If the entered word is new and does not exist on the site 
+      https://en.wiktionary.org, it will not be added to the game words list. If the entered word is new, exists on the 
+      site https://en.wiktionary.org and does not exist in the game words list, it will be added to the end of the list, 
+      otherwise it will be removed from the list. If the word is entered with letters from another locale, the operation 
+      of adding/deleting words will not be performed.
+    cyclic_input_words: "Enter %{number} word:"
+    wiktionary_invalid_message: "The entered word does not exist on the site https://en.wiktionary.org!"
+    inputting_list_words: "List of inputting words: %{list_words}"
+    total_list_words: "Total list of words: %{list_words}"
+    help:
+      first_paragraph: >
+        The program is a classic game "Hangman", where you need to guess the think of word with 7 attempts.
+      second_paragraph: >
+        Single Player Game — user plays against the computer. You can find a game words list in the folder data, 
+        file WordsEN.txt.
+      third_paragraph: >
+        Multiplayer Game — two users play the game. One of the players thinks of word, the second player tries to guess 
+        the word. If the word does not exist in the game words list, it will be added in this list automatically.
+      fourth_paragraph: >
+        Add/Delete Words - the management of the game words list. You can add or delete the words, if you need.
+  
+  menu_game:
+    logo_file: "HangmanLogoEN.txt"
+    items:
+      - "Single Player Game"
+      - "Multiplayer Game"
+      - "Add/Delete Words"
+      - "Help/How to Play"
+      - "Quit the Game"
+    game_title: "Game \"Hangman\"."
+    menu_title: "Menu:"
+    input_item: "Enter menu item:"
+    item_alert_message: "Invalid menu item. Re-enter menu item:"
+    notice_message: "Do you want to quit the game? (yes/no)"
+    possitive: "yes"
+    negative: "no"
+    answer_alert_message: "Invalid input answer. Re-enter your answer:"
+    exit_message: "You quit the game."
+  
+  game:
+    alert_message: "An empty word in the game, nothing to guess. The game went out in emergency mode."
+    input_next_letter: "Enter the next letter:"
+    repeat_next_letter: "Invalid the letter input. Re-enter the next letter:"
+    pattern_for_word: "^[a-zA-Z]+$"
+    pattern_for_letter: "^[a-zA-Z]$"
+  
+  result_printer:
+    alert_no_image: "[ Image not found ]"
+    word: "Word: %{word}"
+    mistakes: "Mistakes: %{letter}"
+    lose_message: "You have lost. Try harder next time! The word to guess was: %{word}."
+    win_message: "Congratulations, you have won!"
+    count_leaving_mistakes: "You have errors left: %{number}"
+  
+  word_list_controller:
+    filename: "WordsEN.txt"
+    pattern: "^[a-zA-Z]+$"
+  
+  wiktionary:
+    url: "https://en.wiktionary.org/wiki/%{word}"
+    word_pattern: "^[a-zA-Z]+$"
+    wiktionary_search_pattern: "Wiktionary does not yet have an entry for"
+
+  languages:
+    en: "English"
+    ru: "Русский"
