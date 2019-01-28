@@ -27,3 +27,96 @@ There are two locale keys in the program such as `en` and `ru`.
 - `./data/WordsEN.txt` or `./data/WordsRU.txt` - text files, in which you can add new words and the program 
 will take them from there.
 - `./image/*.txt` - text images files files with text images (gallows) for different stages of the game.
+
+## Custom locale
+
+You can create your custom locale. For example, you want to make an internationalization of the game in German.
+Then you need to commit the following steps:
+
+- Create a new yaml file `de.yml` in the folder `config/locales`.
+- Fill the file with necessary internationalization texts. Template of yaml file is below.
+- Create a new txt file 'WordsDE.txt' in the folder 'data' for adding your words.
+- Create a new text file `HangmanLogoDE.txt` in the folder 'data' for showing game logo and fil him some text image.
+This step is an optional.
+
+## Template yaml file
+
+Examine the content of other yaml files (e.g. `en.yml`) in order to create your custom yaml file. Template yaml file is considered below:
+
+```
+[locale key]:
+  main:
+    input_word: "[internationalization text]"
+    hidden_word: "[internationalization text] %{word}. [internationalization text]"
+    existing_list_words: "[internationalization text] %{list_words}"
+    add_or_delete_words: "[internationalization text]"
+    counter_of_word: "[internationalization text]"
+    operation_message: >
+      [internationalization text]
+    cyclic_input_words: "[internationalization text] %{number} [internationalization text]"
+    wiktionary_invalid_message: "[internationalization text]"
+    inputting_list_words: "[internationalization text] %{list_words}"
+    total_list_words: "[internationalization text] %{list_words}"
+    help:
+      first_paragraph: >
+        [internationalization text]
+      second_paragraph: >
+        [internationalization text]
+      third_paragraph: >
+        [internationalization text]
+      fourth_paragraph: >
+        [internationalization text]
+  
+  menu_game:
+    logo_file: "[text image file]"
+    items:
+      - "[internationalization text]"
+      - "[internationalization text]"
+      - "[internationalization text]"
+      - "[internationalization text]"
+      - "[internationalization text]"
+    game_title: "[internationalization text]"
+    menu_title: "[internationalization text]"
+    input_item: "[internationalization text]"
+    item_alert_message: "[internationalization text]"
+    notice_message: "[internationalization text]"
+    possitive: "[internationalization text]"
+    negative: "[internationalization text]"
+    answer_alert_message: "[internationalization text]"
+    exit_message: "[internationalization text]"
+  
+  game:
+    alert_message: "[internationalization text]"
+    input_next_letter: "[internationalization text]"
+    repeat_next_letter: "[internationalization text]"
+  
+  result_printer:
+    alert_no_image: "[internationalization text]"
+    word: "[internationalization text] %{word}"
+    mistakes: "[internationalization text] %{letter}"
+    lose_message: "[internationalization text] %{word}."
+    win_message: "[internationalization text]"
+    count_leaving_mistakes: "[internationalization text] %{number}"
+  
+  word_list_controller:
+    filename: "[text words file]"
+  
+  wiktionary:
+    url: "[locale url]"
+    wiktionary_search_pattern: "[locale mistake]"
+
+  languages:
+    en: "English"
+    ru: "Русский"
+    [locale key]: "[locale name]"
+```
+
+For example, for German language:
+
+- [internationalization text] - your internationalization text in German: `Ich hoffe der Regen hört auf, denn ich habe meinen Regenschirm vergessen.`.
+- [text words file] - the name of your text words file for game: `WordsDE.txt`.
+- [text image file] - the name of your text image file for showing game logo: `HangmanLogoDE.txt`.
+- [locale key] - the name of local key: `de`. [List of locale keys](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+- [locale name] - the name of language: `German`.
+- [locale url] - the url of site __Wiktionary__: `https://de.wiktionary.org/wiki/%{word}` (`%{word}` does not need to remove). Visite the [site](https://www.wiktionary.org/) in order to find out if your language exists there or not.
+- [locale mistake] - text alert message when word does not exist on the site __Wiktionary__: `Dieser Eintrag existiert noch nicht!`. You have to find this message for your language on the [site](https://www.wiktionary.org/) and just copy that in your custom yaml file.
