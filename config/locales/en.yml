@@ -17,7 +17,7 @@ en:
     total_list_words: "Total list of words: %{list_words}"
     help:
       first_paragraph: >
-        The program is a classic game "Hangman", where you need to guess the think of word with 7 attempts.
+        The program is a classic game "Hangman", where you need to guess the word with 7 attempts.
       second_paragraph: >
         Single Player Game — user plays against the computer. You can find a game words list in the folder data, 
         file WordsEN.txt.
