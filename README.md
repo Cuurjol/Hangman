@@ -35,7 +35,7 @@ Then you need to commit the following steps:
 
 - Create a new yaml file `de.yml` in the folder `config/locales`.
 - Fill the file with necessary internationalization texts. Template of yaml file is below.
-- Create a new txt file 'WordsDE.txt' in the folder 'data' for adding your words.
+- Create a new txt file `WordsDE.txt` in the folder `data` for adding your words.
 - Create a new text file `HangmanLogoDE.txt` in the folder 'data' for showing game logo and fil him some text image.
 This step is an optional.
 
