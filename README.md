@@ -119,4 +119,4 @@ For example, for German language:
 - [locale key] - the name of local key: `de`. [List of locale keys](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 - [locale name] - the name of language: `German`.
 - [locale url] - the url of site __Wiktionary__: `https://de.wiktionary.org/wiki/%{word}` (`%{word}` does not need to remove). Visite the [site](https://www.wiktionary.org/) in order to find out if your language exists there or not.
-- [locale mistake] - text alert message when word does not exist on the site __Wiktionary__: `Dieser Eintrag existiert noch nicht!`. You have to find this message for your language on the [site](https://www.wiktionary.org/) and just copy that in your custom yaml file.
+- [locale mistake] - text alert message when word does not exist on the site __Wiktionary__: `Dieser Eintrag existiert noch nicht!`. You have to find this message for your language on the [site](https://www.wiktionary.org/) when some word does not exist and just copy that in your custom yaml file.
