@@ -4,8 +4,8 @@ class Game
   MAX_ERRORS = 7.freeze
 
   def initialize(word)
-    @pattern_for_word = Regexp.new(I18n.t('game.pattern_for_word'))
-    @pattern_for_letter = Regexp.new(I18n.t('game.pattern_for_letter'))
+    @pattern_for_word = /\A[[:alpha:]]+\z/
+    @pattern_for_letter = /\A[[:alpha:]]\z/
 
     @letters = get_letters(word)
     @errors = 0

@@ -50,8 +50,6 @@ ru:
     alert_message: "Пустое слово в игре, нечего отгадывать. Игра вышла в аварийном режиме."
     input_next_letter: "Введите следующую букву:"
     repeat_next_letter: "Некорректный ввод буквы. Повторите ввод:"
-    pattern_for_word: "^[а-яёА-ЯЁ]+$"
-    pattern_for_letter: "^[а-яёА-ЯЁ]$"
   
   result_printer:
     alert_no_image: "[ Изображение не найдено ]"
@@ -63,11 +61,9 @@ ru:
   
   word_list_controller:
     filename: "WordsRU.txt"
-    pattern: "^[а-яёА-ЯЁ]+$"
   
   wiktionary:
     url: "https://ru.wiktionary.org/wiki/%{word}"
-    word_pattern: "^[а-яёА-ЯЁ]+$"
     wiktionary_search_pattern: "В настоящий момент текст на данной странице отсутствует."
 
   languages:

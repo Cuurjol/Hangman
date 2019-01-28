@@ -3,7 +3,7 @@ class WordListController
     @work_directory_path = Dir.pwd
     @data_folder = "data"
     @words_file = I18n.t('word_list_controller.filename')
-    @pattern = Regexp.new(I18n.t('word_list_controller.pattern'))
+    @pattern = /\A[[:alpha:]]+\z/
 
     words_file_path = File.join(@work_directory_path, @data_folder, @words_file)
     if File.exists?(words_file_path)

@@ -3,7 +3,7 @@ require "net/http"
 class Wiktionary
   def self.valid_word?(word)
     url = I18n.t('wiktionary.url', word: word.downcase)
-    word_pattern = Regexp.new(I18n.t('wiktionary.word_pattern'))
+    word_pattern = /\A[[:alpha:]]+\z/
     wiktionary_search_pattern = Regexp.new(I18n.t('wiktionary.wiktionary_search_pattern'))
 
     return nil until word.scan(word_pattern).size == 1

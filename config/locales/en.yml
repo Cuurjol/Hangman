@@ -49,8 +49,6 @@ en:
     alert_message: "An empty word in the game, nothing to guess. The game went out in emergency mode."
     input_next_letter: "Enter the next letter:"
     repeat_next_letter: "Invalid the letter input. Re-enter the next letter:"
-    pattern_for_word: "^[a-zA-Z]+$"
-    pattern_for_letter: "^[a-zA-Z]$"
   
   result_printer:
     alert_no_image: "[ Image not found ]"
@@ -62,11 +60,9 @@ en:
   
   word_list_controller:
     filename: "WordsEN.txt"
-    pattern: "^[a-zA-Z]+$"
   
   wiktionary:
     url: "https://en.wiktionary.org/wiki/%{word}"
-    word_pattern: "^[a-zA-Z]+$"
     wiktionary_search_pattern: "Wiktionary does not yet have an entry for"
 
   languages:
