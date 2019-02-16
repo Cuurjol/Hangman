@@ -6,7 +6,7 @@ The program is a classic game "Hangman", where you need to guess the word with 7
 
 ## Installing and using the program
 
-The program is created on the __Ruby 2.5.1__ .
+The program was created on the __Ruby 2.5.1__ .
 
 You need to install Ruby interpreter in order to work with this program.
 [ruby](https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-5-1-released)
