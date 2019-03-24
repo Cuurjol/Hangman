@@ -20,19 +20,18 @@ end
 
 locales = I18n.available_locales
 
-if ARGV[0].nil?
+if !ARGV.empty? && locales.include?(ARGV[0].to_sym)
+  I18n.locale = ARGV[0]
+else
   puts("List of available locales:\n\n")
   I18n.available_locales.each_with_index { |e, i| puts("#{i + 1}: #{I18n.t("languages.#{e}")}") }
 
   print("\nEnter the locales code: ")
-  code = gets.to_i
+  code = STDIN.gets.to_i
 
   abort("\nFatal error! Wrong local code. The game went out in emergency mode.") if code <= 0 || code > locales.count
 
   I18n.locale = locales[code - 1]
-else
-  abort("Fatal error! The locale code does not exist. The game went out in emergency mode.") unless locales.include?(ARGV[0].to_sym)
-  I18n.locale = ARGV[0]
 end
 
 menu_game = MenuGame.new
