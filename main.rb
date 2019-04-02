@@ -7,7 +7,7 @@ require_relative 'lib/wiktionary'
 
 system("clear") || system("cls")
 
-I18n.load_path << Dir[File.expand_path("config/locales") + "/*.yml"]
+I18n.load_path << Dir[File.expand_path('config/locales') + '/*.yml'].reject { |file| file.end_with?('template.yml') }
 
 if (Gem.win_platform?)
   Encoding.default_external = Encoding.find(Encoding.locale_charmap)
