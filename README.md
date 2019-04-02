@@ -27,7 +27,7 @@ Ensure that the library manager `bundler` is installed.
   ```
   `bundle install`
   ```
-- Input `bundle exec ruby main.rb` or `bundle exec ruby main.rb [locale]` for running program:
+- Input the next command for running program:
   ```
   bundle exec ruby main.rb
   ```
