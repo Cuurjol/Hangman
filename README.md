@@ -31,18 +31,14 @@ will take them from there.
 ## Custom locale
 
 You can create your custom locale. For example, you want to make an internationalization of the game in German.
+Examine the content of other yaml files (e.g. `en.yml`) in order to create your custom yaml file.
 Then you need to commit the following steps:
 
 - Create a new yaml file `de.yml` in the folder `config/locales`.
-- Fill the file with necessary internationalization texts. Template of yaml file is below.
+- Fill the file with necessary internationalization texts. The `template.yaml` file is located in the `config/locales` folder.
 - Create a new txt file `WordsDE.txt` in the folder `data` for adding your words.
 - Create a new text file `HangmanLogoDE.txt` in the folder 'data' for showing game logo and fil him some text image.
 This step is an optional.
-
-## Template yaml file
-
-Examine the content of other yaml files (e.g. `en.yml`) in order to create your custom yaml file. The `template.yaml` file is located in the `config/locales` folder.
-
 
 ## Author
 
