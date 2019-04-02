@@ -15,11 +15,27 @@ The program uses such libraries (gems) as `rspec` and `i18n`.
 
 Ensure that the library manager `bundler` is installed.
 
-- Input in the __cmd__ or __terminal__ `gem install bundler`.
-- After installing the library manager, input `bundler -v` in order to make sure that it was installed.
-- Input `bundle install` for installing the necessary gems before running program.
-- Input `bundle exec ruby main.rb` or `bundle exec ruby main.rb [locale]` for running program, where`[locale]` is a locale key.
-There are two locale keys in the program such as `en` and `ru`.
+- Input in the __cmd__ or __terminal__ the following command:
+  ```
+  gem install bundler
+  ```
+- After installing the library manager, input the next command in order to make sure that it was installed:
+  ```
+  bundler -v
+  ```
+- Input the next command for installing the necessary gems before running program:
+  ```
+  `bundle install`
+  ```
+- Input `bundle exec ruby main.rb` or `bundle exec ruby main.rb [locale]` for running program:
+  ```
+  bundle exec ruby main.rb
+  ```
+  or
+  ```
+  bundle exec ruby main.rb [locale]
+  ```
+  where`[locale]` is a locale key. There are two locale keys in the program such as `en` and `ru`.
 
 ## Main program files
 
