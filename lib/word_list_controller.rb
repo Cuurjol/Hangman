@@ -18,9 +18,9 @@ class WordListController
   def add_word(word)
     words_file_path = File.join(@work_directory_path, @data_folder, @words_file)
     file = File.new(words_file_path, "a:UTF-8")
-    file.puts(word)
+    file.puts(word.upcase)
     file.close
-    @array.push(word)
+    @array.push(word.upcase)
   end
 
   def delete_word(word)
