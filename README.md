@@ -11,9 +11,9 @@ The program was created on the __Ruby 2.5.1__ .
 You need to install Ruby interpreter in order to work with this program.
 [ruby](https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-5-1-released)
 
-The program uses such libraries (gems) as `rspec` and `i18n`.
+The program uses such libraries (gems) as __rspec__ and __i18n__.
 
-Ensure that the library manager `bundler` is installed.
+Ensure that the library manager __bundler__ is installed.
 
 - Input in the __cmd__ or __terminal__ the following command:
   ```
@@ -35,7 +35,7 @@ Ensure that the library manager `bundler` is installed.
   ```
   bundle exec ruby main.rb [locale]
   ```
-  where`[locale]` is a locale key. There are two locale keys in the program such as `en` and `ru`.
+  where __[locale]__ is a locale key. There are two locale keys in the program such as __en__ and __ru__.
 
 ## Main program files
 
@@ -55,6 +55,10 @@ Then you need to commit the following steps:
 - Create a new txt file `WordsDE.txt` in the folder `data` for adding your words.
 - Create a new text file `HangmanLogoDE.txt` in the folder 'data' for showing game logo and fil him some text image.
 This step is an optional.
+
+## Demo
+
+You can watch a demo version of the game at the [link](https://asciinema.org/a/ByesWSUHhQeU6gjPcMXVlSnRN).
 
 ## Author
 
